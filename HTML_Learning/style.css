@@ -1,0 +1,91 @@
+:root {
+    --height: 300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: #999;
+    padding-bottom: 10%;
+    border: 2px solid #000;
+    margin: 1px;
+}
+
+/* Mục đích của dòng này là để clear float ở bên dưới section */
+/*section::after {*/
+/*    content: "";*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/
+
+.div-left {
+    float: left;
+    width: 20%;
+    height: var(--height);
+    background-color: yellow;
+}
+
+.content {
+    float: left;
+    width: 80%;
+    height: var(--height);
+    background-color: #ccc;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #eee;
+    margin: 1px;
+    border: 1px solid #000;
+}
+
+.header-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.nav-2, .footer-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.section-2 {
+    display: flex;
+}
+
+.left-side-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 25%;
+    height: 150px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.content-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    flex-grow: 1;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
