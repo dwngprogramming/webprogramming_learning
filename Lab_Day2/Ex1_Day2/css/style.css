@@ -8,16 +8,20 @@
     font-family: sans-serif;
 }
 
-#page .container {
+.container {
     width: 1180px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #section_normal_1 {
-    height: 78px;
     background-color: #ffffff;
     border-bottom: 3px solid #d9d9d9;
+}
+
+#section_normal_1 .header_style {
+    display: flex;
+    height: 80px;
 }
 
 #section_normal_1 .sixteen {
@@ -27,11 +31,13 @@
 
 #section_normal_1 .one-third {
     margin-top: 18px;
+    flex-shrink: 1;
 }
 
 #section_normal_1 .two-thirds {
     display: flex;
     flex-direction: row-reverse;
+    flex-shrink: 1;
 }
 
 #section_normal_1 .htext_style {
@@ -98,7 +104,13 @@
     background-color: var(--blue);
     border-radius: 5px;
     color: #ffffff;
-    box-shadow: 0 4px #249aba
+    box-shadow: 0 4px #249aba;
+    transition: 0.5s ease-out;
+}
+
+#section_normal_4_2 .pix_button.blue_bg:hover {
+    background-color: rgba(45, 192, 232, .8);
+    box-shadow: 0 0;
 }
 
 #section_normal_4_2 .pixicon-eye {
@@ -117,9 +129,11 @@
 }
 
 #section_normal_6 .envato_unbounce {
+    display: flex;
     background-color: #eeeeee;
-    height: 390px;
     border-bottom: 4px solid #dddddd;
+    padding-bottom: 52px;
+    overflow: auto;
 }
 
 /*  2 option to clear float
@@ -135,11 +149,11 @@
         }   */
 #section_normal_6 .container {
     /* overflow: hidden: Khi nội dung vượt ra khỏi vùng chứa, nó sẽ bị ẩn đi */
-    overflow: hidden;
+
     /* Set height của .container bằng .envato_unbounce để 2 div này trùng chiều cao với nhau,
      tránh việc không thể hiển thị nội dung khi overflow: hidden (nếu không set thì container
      sẽ tự động bằng với phần tử cuối => Không box-shadow xuống dưới được */
-    height: 390px;
+    /*height: 390px;*/
 }
 
 #section_normal_6 .L1_style {
@@ -160,12 +174,18 @@
 
 #section_normal_6 .columns {
     display: flex;
-    float: left;
     width: 572px;
 }
 
 #section_normal_6 .columns.alpha {
-    margin-right: 25px;
+    display: inline-block;
+    margin-right: 18px;
+    float: left;
+}
+
+#section_normal_6 .columns.omega {
+    display: inline-block;
+    float: right;
 }
 
 #section_normal_6 .logo_style {
@@ -208,3 +228,73 @@
     color: #65a9fc;
 }
 
+#section_agency_5 .foot_st {
+    display: flex;
+}
+
+#section_agency_5 .center_text {
+    text-align: center;
+}
+
+#section_agency_5 .f1_style {
+    margin-top: 74px;
+    color: #5b9a68;
+    font-size: 32px;
+}
+
+#section_agency_5 .f2_style {
+    margin-top: 36px;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+#section_agency_5 .second_link {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 28px 40px;
+    background-color: transparent;
+    border: 3px solid #4d8c5a;
+    transition: 0.5s ease-out;
+}
+
+#section_agency_5 .second_link a {
+    text-decoration: none;
+    color: #4d8c5a;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#section_agency_5 .second_link:hover {
+    background-color: #4d8c5a;
+    transition: 0.5s ease-out;
+}
+
+#section_agency_5 .second_link:hover a{
+    color: #ffffff;
+}
+
+#section_agency_5 .rights_st {
+    margin-top: 54px;
+    margin-bottom: 8px;
+}
+
+#section_agency_5 .center_btn {
+    margin-top: 38px;
+    margin-bottom: 52px;
+}
+
+@media screen and (max-width: 1180px) {
+    #section_normal_6 .columns.alpha {
+        margin-left: 5%;
+        margin-right: .5%;
+        width: 400px;
+    }
+
+    #section_normal_6 .columns.omega {
+        width: 400px;
+        margin-left: .5%;
+        margin-right: 5%;
+    }
+}
