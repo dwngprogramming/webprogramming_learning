@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+#section_text_2 {
+    display: flex;
+    height: 120px;
+    background-color: #f3f3f3;
+}
+
+#section_text_2 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_text_2 .alpha {
+    margin-top: 32px;
+}
+
+#section_text_2 .omega a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 16px 22px;
+    margin-top: 28px;
+    background-color: #f77825;
+    border-radius: 3px;
+}
+
+#section_header_1 .header_style {
+    display: flex;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+/* Inherit height */
+#section_header_1 .container, #section_header_1 .firas2,
+#section_header_1 .navbar, #section_header_1 .containerss {
+    height: inherit;
+}
+
+#section_header_1 .navbar-header {
+    display: none;
+}
+
+#section_header_1 .containerss {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section_header_1 ul {
+    list-style-type: none;
+}
+
+#section_header_1 li {
+    display: inline-block;
+}
+
+#section_header_1 a {
+    text-decoration: none;
+    color: #7f7f7f;
+    font-weight: 700;
+    margin-right: 52px;
+}
+
+#section_slider {
+    background-color: #f3f3f3;
+}
+
+#section_gym_4 .top_padding {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 24px;
+}
+#section_gym_4 .img_gym_st img {
+    border-radius: 50%;
+}
+
+#section_gym_4 .text_gym_style {
+    margin-top: 28px;
+}
+
+#section_gym_4 .gym_st {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#section_gym_4 .gym_text {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+#section_gym_4 .link_3_btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 18px 21px 12px;
+    background-color: #ff8833;
+    border-radius: 3px;
+}
+
+#section_gym_4 .link_3_btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#section_intro_title {
+    background-color: #f3f3f3;
+    padding-top: 12px;
+    padding-bottom: 86px;
+}
+
+#section_intro_title .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_intro_title .one-third {
+    text-align: center;
+    width: 370px;
+    border: 3px solid #999999;
+    border-radius: 3px;
+}
+
+#section_intro_title ul {
+    list-style-type: none;
+}
+
+#section_intro_title .big_title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 48px;
+}
+
+#section_intro_title .big_title.blue_text {
+    color: #2dc0e8;
+}
+
+#section_intro_title .big_title.orange {
+    color: #f77825;
+}
+
+#section_intro_title .light_gray {
+    color: #999999;
+}
+
+#section_intro_title .light_gray.editContent {
+    margin-bottom: 62px;
+}
+
+#section_intro_title .pix_text {
+    margin-bottom: 42px;
+}
+
+#section_intro_title .active_bg_open {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 42px;
+    color: #ffffff;
+    padding: 24px 28px;
+    background-color: #2dc0e8;
+    border-radius: 3px;
+}
+
+#section_party_3 {
+    background-color: #191919;
+}
+
+#section_party_3 .headtext_style {
+    color: #ffffff;
+}
+
+#hidden_pix_15 {
+    display: none;
+}
+
