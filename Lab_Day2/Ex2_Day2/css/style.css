@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 .container {
@@ -178,11 +178,108 @@
     background-color: #191919;
 }
 
+#section_party_3 .sixteen {
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 74px;
+}
+
+/* Position relative to .sixteen, and .sixteen have height = .text_input
+    -> Not need top (top = 0)   */
+#section_party_3 .text_input {
+    text-align: center;
+    width: 560px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 24px;
+    background-color: #151515;
+}
+
 #section_party_3 .headtext_style {
+    position: relative;
     color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 64px;
+    font-size: 24px;
+}
+
+#section_party_3 .headtext_style::after {
+    content: "";
+    width: 100px;
+    height: 8px;
+    position: absolute;
+    top: 114px;
+    right: 50%;
+    transform: translateX(50%);
+    background: #1c8ff5;
+}
+
+#section_party_3 .editContent .subtext_style {
+    color: #787677;
+    font-size: 20px;
+    margin: 34px 50px 44px 50px;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+}
+
+#result #name, #result #email, #result #submit_btn_15 {
+    margin: 12px 27px;
+    height: 56px;
+    border-radius: 3px;
+}
+
+#result input {
+    padding-left: 22px;
+}
+
+#result #submit_btn_15 {
+    background: #2d86ee;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 #hidden_pix_15 {
     display: none;
 }
+#section_party_4 {
+    background-color: #151515;
+}
+#section_party_4 .sixteen {
+    padding: 36px 0 18px 0;
+}
 
+/* Clear float */
+#section_party_4 .sixteen::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#section_party_4 .seven {
+    float: left;
+}
+
+#section_party_4 .seven .rights_st,
+#section_party_4 .likes_st {
+    color: #a9a5a1;
+}
+
+#section_party_4 .seven .pixfort_st {
+    color: #1c8fee;
+    font-weight: 700;
+}
+
+#section_party_4 .nine, #section_party_4 .likes_st {
+    float: right;
+}
+
+#section_party_4 .bottom-icons {
+    list-style-type: none;
+}
