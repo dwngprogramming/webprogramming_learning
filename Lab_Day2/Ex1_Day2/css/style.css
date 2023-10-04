@@ -1,0 +1,300 @@
+:root {
+    --blue: #2dc0e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section_normal_1 {
+    background-color: #ffffff;
+    border-bottom: 3px solid #d9d9d9;
+}
+
+#section_normal_1 .header_style {
+    display: flex;
+    height: 80px;
+}
+
+#section_normal_1 .sixteen {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_normal_1 .one-third {
+    margin-top: 18px;
+    flex-shrink: 1;
+}
+
+#section_normal_1 .two-thirds {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-shrink: 1;
+}
+
+#section_normal_1 .htext_style {
+    margin-top: 28px;
+    margin-right: 27px;
+}
+
+#section_normal_1 .pix_text {
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+#section_normal_1 .two-thirds a {
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+#section_normal_4_2 {
+    display: flex;
+    height: 670px;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_normal_4_2 .sixteen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_normal_4_2 .pix_container {
+    margin-right: 40px;
+}
+
+#section_normal_4_2 .big_text.blue_text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+/* Because div have a more size than original content => Calculate margin or padding */
+#section_normal_4_2 .big_title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 17px;
+    margin-bottom: 38px;
+}
+
+#section_normal_4_2 .normal_text.light_gray {
+    color: #989898;
+    font-size: 16px;
+    margin-bottom: 34px;
+}
+
+#section_normal_4_2 .pix_button.blue_bg {
+    display: flex;
+    width: 134px;
+    text-decoration: none;
+    padding: 18px 23px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 4px #249aba;
+    transition: 0.5s ease-out;
+}
+
+#section_normal_4_2 .pix_button.blue_bg:hover {
+    background-color: rgba(45, 192, 232, .8);
+    box-shadow: 0 0;
+}
+
+#section_normal_4_2 .pixicon-eye {
+    /* Với SVG khi CSS màu bằng thẻ img cần sử dụng jQuery */
+    width: 20px;
+    align-items: center;
+    /* Margin lại khoảng space-between của flexbox */
+    margin-left: 8px;
+}
+
+#section_normal_4_2 .pix_button span {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+#section_normal_6 .envato_unbounce {
+    display: flex;
+    background-color: #eeeeee;
+    border-bottom: 4px solid #dddddd;
+    padding-bottom: 52px;
+    overflow: auto;
+}
+
+/*  2 option to clear float
+    Op 1: Clearing float by ::after and ::after must be superclass of class using float:
+        #section_normal_6 .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    Op 2: Clearing float by overflow:hidden:
+        #section_normal_6 .container {
+        overflow: hidden;
+        }   */
+#section_normal_6 .container {
+    /* overflow: hidden: Khi nội dung vượt ra khỏi vùng chứa, nó sẽ bị ẩn đi */
+
+    /* Set height của .container bằng .envato_unbounce để 2 div này trùng chiều cao với nhau,
+     tránh việc không thể hiển thị nội dung khi overflow: hidden (nếu không set thì container
+     sẽ tự động bằng với phần tử cuối => Không box-shadow xuống dưới được */
+    /*height: 390px;*/
+}
+
+#section_normal_6 .L1_style {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 49px;
+    color: #696969;
+}
+
+#section_normal_6 .L2_style {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 66px;
+    color: #b9b9b9;
+    font-weight: 400;
+}
+
+#section_normal_6 .columns {
+    display: flex;
+    width: 572px;
+}
+
+#section_normal_6 .columns.alpha {
+    display: inline-block;
+    margin-right: 18px;
+    float: left;
+}
+
+#section_normal_6 .columns.omega {
+    display: inline-block;
+    float: right;
+}
+
+#section_normal_6 .logo_style {
+    border-radius: 50%;
+}
+
+#section_normal_6 .txt.editContent, #section_normal_6 .env_st .pix_text {
+    font-size: 14px;
+}
+
+#section_normal_6 .txt.editContent {
+    margin-bottom: 20px;
+}
+
+#section_normal_6 .box_1, #section_normal_6 .box_2 {
+    display: flex;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 0 4px #dddddd;
+}
+
+#section_normal_6 .b_style {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0 18px;
+    border-radius: 10px 0 0 10px;
+}
+
+#section_normal_6 .txt_style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18px;
+    background-color: #ffffff;
+    border-radius: 0 10px 10px 0;
+}
+
+#section_normal_6 .env_st .pix_text {
+    color: #65a9fc;
+}
+
+#section_agency_5 .foot_st {
+    display: flex;
+}
+
+#section_agency_5 .center_text {
+    text-align: center;
+}
+
+#section_agency_5 .f1_style {
+    margin-top: 74px;
+    color: #5b9a68;
+    font-size: 32px;
+}
+
+#section_agency_5 .f2_style {
+    margin-top: 36px;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+#section_agency_5 .second_link {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 28px 40px;
+    background-color: transparent;
+    border: 3px solid #4d8c5a;
+    transition: 0.5s ease-out;
+}
+
+#section_agency_5 .second_link a {
+    text-decoration: none;
+    color: #4d8c5a;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#section_agency_5 .second_link:hover {
+    background-color: #4d8c5a;
+    transition: 0.5s ease-out;
+}
+
+#section_agency_5 .second_link:hover a{
+    color: #ffffff;
+}
+
+#section_agency_5 .rights_st {
+    margin-top: 54px;
+    margin-bottom: 8px;
+}
+
+#section_agency_5 .center_btn {
+    margin-top: 38px;
+    margin-bottom: 52px;
+}
+
+@media screen and (max-width: 1180px) {
+    #section_normal_6 .columns.alpha {
+        margin-left: 5%;
+        margin-right: .5%;
+        width: 400px;
+    }
+
+    #section_normal_6 .columns.omega {
+        width: 400px;
+        margin-left: .5%;
+        margin-right: 5%;
+    }
+}
