@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Tahoma, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#section_form {
+    display: flex;
+    background-color: #e6e6e6;
+}
+
+#section_form .form_title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+#section_form .form_main {
+    margin: 30px 200px;
+    padding: 28px 22px 36px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+#section_form #form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#section_form .form_content {
+    margin-top: 40px;
+}
+
+#section_form .form_content .input_1_col,
+#section_form .form_content .input_2_col{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#section_form .form_content .input_1_col {
+    border: 3px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+#section_form .form_content .input_2_col {
+    display: flex;
+    width: 100%;
+}
+
+#section_form .form_content label {
+    padding-left: 8px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#section_form .form_content label::after {
+    content: " *";
+    color: red;
+}
+
+#section_form .form_content .no_need::after {
+    content: "";
+}
+
+#section_form .form_content input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+#section_form .form_content input::placeholder {
+    color: #dddddd;
+}
+
+#section_form .input_1_col.col-left {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#section_form .input_1_col.col-right {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+#section_form .form_content .input_1_col select {
+    width: 100%;
+    padding: 8px;
+    font-weight: 600;
+    appearance: none;
+    background-image: url('../images/angle-down.png');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: top 50% right 5%;
+    border: none;
+    outline: none;
+}
+
+#section_form .form_content .message_box {
+    background-color: #ffffff;
+}
+
+#section_form .form_content #message {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    resize: vertical;
+    border: none;
+    outline: none;
+}
+
+#section_form .form_content .input_1_col.button_div {
+    border: none;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#section_form #submit_button a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+#section_form .background_gray {
+    background-color: #f7f7f7;
+}
+
+
