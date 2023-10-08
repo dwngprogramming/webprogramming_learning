@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#section_signup {
+    background: #e1e1e1;
+    padding: 20px 0;
+}
+
+#section_signup .container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#section_signup .form_main {
+    margin: 0 250px;
+    padding: 25px 20px;
+    background: #ffffff;
+}
+
+#section_signup .title_content {
+    display: flex;
+    flex-direction: column;
+}
+
+#section_signup .title {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #85d52e;
+    font-weight: 700;
+}
+
+#section_signup input[type="text"] {
+    border-radius: 3px;
+    border: 2px solid #f1f1f1;
+    transition: 0.3s ease-out;
+}
+
+#section_signup input[type="text"].full_row {
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    margin-bottom: 12px;
+    border: 2px solid #f1f1f1;
+}
+
+#section_signup .two_col {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#section_signup .half_width {
+    width: 50%;
+}
+
+#section_signup .three_col {
+    width: 100%;
+    display: flex;
+}
+
+#section_signup input[type="text"].dob {
+    padding: 12px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#section_signup input[type="text"]:focus {
+    border: 2px solid #85d52e;
+    outline: none;
+}
+
+#section_signup .two_col.margin_bottom {
+    margin-bottom: 12px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.two_col.no_margin_lr {
+    display: flex;
+    border-radius: 3px;
+}
+
+.half_row {
+    padding: 10px 10px 10px 40px;
+}
+
+.terms {
+    font-size: 12px;
+}
+
+input#terms:checked {
+    color: #85d52e;
+}
+
+.radio {
+    font-size: 14px;
+    width: 50%;
+    border: 3px solid #f1f1f1;
+}
+
+.radio.left.ml {
+    margin-left: 10px;
+}
+
+.left {
+    border-radius: 3px 0 0 3px;
+}
+
+.right {
+    border-radius: 0 3px 3px 0;
+}
+
+.margin_left {
+    margin-left: 6px;
+}
+.margin_right {
+    margin-right: 6px;
+}
+
+label {
+    color: #757575;
+    display: block;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.3s ease-out;
+}
+
+label.terms  {
+    display: inline;
+    padding: 0;
+    border: 0;
+    transition: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: green;
+    color: #ffffff;
+}
+

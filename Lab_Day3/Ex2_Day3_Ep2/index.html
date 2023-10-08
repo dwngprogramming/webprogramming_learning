@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div id="section_signup">
+    <div class="container">
+        <div class="form_main">
+            <form action="" id="form">
+                <div class="title_content">
+                    <div class="title">
+                        <span class="title_header">Account</span>
+                    </div>
+                    <input type="text" id="full_name" placeholder="Full Name" class="full_row">
+                    <input type="text" id="email" placeholder="Email" class="full_row">
+                    <input type="text" id="password" placeholder="Password" class="full_row">
+                </div>
+                <div class="two_col margin_bottom">
+                    <div class="title_content half_width">
+                        <div class="title">
+                            <span class="title_header">Date Of Birth</span>
+                        </div>
+                        <div class="three_col">
+                            <input type="text" id="day" placeholder="DD" class="dob">
+                            <input type="text" id="month" placeholder="MM" class="dob">
+                            <input type="text" id="year" placeholder="YYYY" class="dob margin_right">
+                        </div>
+                    </div>
+                    <div class="title_content half_width">
+                        <div class="title">
+                            <span class="title_header">Gender</span>
+                        </div>
+                        <div class="two_col no_margin_lr">
+                            <div class="radio left margin_left">
+                                <input type="radio" name="gender" id="male">
+                                <label for="male" class=radio_rectangle>Male</label>
+                            </div>
+                            <div class="radio right">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female" class="radio_rectangle">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title_content">
+                    <div class="title">
+                        <span class="title_header">Payment Details</span>
+                    </div>
+                    <div class="two_col no_margin_lr margin_bottom">
+                        <div class="radio left">
+                            <input type="radio" name="payment" id="credit_card">
+                            <label for="credit_card" class="credit_rectangle">Credit Card</label>
+                        </div>
+                        <div class="radio right">
+                            <input type="radio" name="payment" id="paypal">
+                            <label for="paypal" class="paypal_rectangle">Paypal</label>
+                        </div>
+                    </div>
+                    <input type="text" name="card_number" id="card_number" placeholder="Card Number" class="full_row">
+                    <div class="two_col margin_bottom">
+                        <input type="text" name="cvc" id="cvc" placeholder="Card CVC" class="half_width margin_right half_row">
+                        <input type="date" name="time" id="time" class="half_width margin_left half_row">
+                    </div>
+                </div>
+                <div class="title_content">
+                    <div class="title">
+                        <span class="title_header">Terms and Conditions</span>
+                    </div>
+                    <div class="terms_content">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms" class="terms">I accept the terms and conditions for signing up to this
+                            service, and hereby confirm I have read the privacy policy
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
